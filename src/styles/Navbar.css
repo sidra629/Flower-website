@@ -1,0 +1,106 @@
+.navbar {
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  min-height: 75px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 700;
+  color: #29201f;
+}
+
+.logo span {
+  color: #c56b7c;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-links a {
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #c56b7c;
+}
+
+.cart-link {
+  position: relative;
+}
+
+.cart-count {
+  position: absolute;
+  top: -12px;
+  right: -15px;
+
+  width: 20px;
+  height: 20px;
+
+  border-radius: 50%;
+  background: #c56b7c;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 11px;
+}
+
+.menu-btn {
+  display: none;
+  border: none;
+  background: transparent;
+  font-size: 25px;
+}
+
+@media (max-width: 700px) {
+  .menu-btn {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+
+    position: absolute;
+    top: 75px;
+    left: 0;
+
+    width: 100%;
+
+    background: white;
+
+    flex-direction: column;
+    padding: 25px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
+
+/* Active tab highlight */
+.nav-links a.nav-active {
+  color: #c56b7c;
+  font-weight: 700;
+  border-bottom: 2px solid #c56b7c;
+}

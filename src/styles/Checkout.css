@@ -1,0 +1,147 @@
+.checkout-page {
+  padding: 70px 0;
+}
+
+.checkout-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.checkout-header p {
+  color: #c56b7c;
+  letter-spacing: 2px;
+  font-size: 12px;
+}
+
+.checkout-header h1 {
+  font-size: 48px;
+  margin-top: 10px;
+}
+
+.checkout-container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 50px;
+}
+
+.checkout-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.checkout-form h2 {
+  margin: 15px 0 5px;
+}
+
+.checkout-form input {
+  border: 1px solid #ddd;
+  padding: 15px;
+  outline: none;
+}
+
+.payment-option {
+  border: 1px solid #ddd;
+  padding: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+.checkout-form button {
+  border: none;
+  background: #c56b7c;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.checkout-summary {
+  background: #f7eeee;
+  padding: 30px;
+  height: fit-content;
+}
+
+.checkout-item,
+.checkout-row,
+.checkout-total {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin: 15px 0;
+}
+
+.checkout-item {
+  font-size: 14px;
+}
+
+.checkout-total {
+  font-size: 21px;
+}
+
+.checkout-total strong {
+  color: #c56b7c;
+}
+
+.checkout-summary hr {
+  border: none;
+  border-top: 1px solid #ddd;
+}
+
+.checkout-empty,
+.order-success {
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.checkout-empty a {
+  color: #c56b7c;
+  margin-top: 20px;
+}
+
+.success-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #dff3e4;
+  color: #31904c;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 40px;
+}
+
+.order-success h1 {
+  margin: 25px 0 10px;
+}
+
+.order-success p {
+  max-width: 500px;
+  color: #777;
+  line-height: 1.7;
+}
+
+.order-success button {
+  margin-top: 25px;
+  border: none;
+  background: #c56b7c;
+  color: white;
+  padding: 14px 25px;
+}
+
+@media (max-width: 800px) {
+  .checkout-container {
+    grid-template-columns: 1fr;
+  }
+}
