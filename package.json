@@ -12,10 +12,7 @@
   "dependencies": {
     "@tailwindcss/vite": "^4.3.2",
     "bootstrap": "^5.3.8",
-<<<<<<< HEAD
     "lucide-react": "^1.70.0",
-=======
->>>>>>> ae713704b620319dcac616c4991170d0140eed13
     "react": "^19.2.6",
     "react-dom": "^19.2.6",
     "react-router-dom": "^7.18.0",
